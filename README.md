@@ -1,4 +1,5 @@
-# Things TO DO
+# Project [Subject]((https://university.alchemy.com/course/ethereum/md/63f8fad3716397000257631c))
+
 -  Prove to the server we're on the nice list
 -  Add request body parameters
 -  Grab the parameters from the front-end
