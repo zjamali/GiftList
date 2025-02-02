@@ -1,3 +1,11 @@
+# Things TO DO
+-  Prove to the server we're on the nice list
+-  Add request body parameters
+-  Grab the parameters from the front-end
+-  Hardcode a merkle root here representing the whole nice list
+-  Prove that a name is in the list 
+
+
 # Gift List
 
 To get started with the repository, clone it and then run `npm install` in the top-level directory to install the depedencies.
@@ -15,6 +23,24 @@ Think of the client as the _prover_ here. It needs to prove to the server that s
 You can run the server from the top-level directory with `node server/index`. This file is an express server which will be hosted on port 1225 and respond to the client's request.
 
 Think of the server as the _verifier_ here. It needs to verify that the `name` passed by the client is in the `MERKLE_ROOT`. If it is, then we can send the gift! 
+
+## Usage 
+```bash 
+# 'Doreen Smith' is in tha nice list 
+node client/index 'Doreen Smith'
+
+# Response from server  
+> { gift: 'You got a toy robot! 🥳' }
+
+
+# 'Doreen Smith' is in tha nice list 
+node client/index 'Zouhair Jamali'
+
+# Response from server 
+{ gift: 'You are not on the list 🥲' }
+``` 
+
+
 
 ## Utils
 
